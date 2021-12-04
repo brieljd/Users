@@ -4,7 +4,7 @@ API RESTful de creación de usuarios.
 
 # Ejecución del Servicio
 1. Código fuente GitHub :
-   - https://github.com/brieljd/basic-go.git
+   - https://github.com/brieljd/Users
 2. Ejecutar proyecto a través del siguiente comando:
    - gradle bootRun
 3. Importar Postman desde la siguiente ruta:
