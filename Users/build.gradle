@@ -1,0 +1,34 @@
+plugins {
+	id 'org.springframework.boot' version '2.4.8'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id 'groovy'
+
+}
+
+group = 'com.bci'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-validation', version: '2.5.2'
+
+	compile group: 'io.jsonwebtoken', name:'jjwt', version:'0.9.0'
+	compile group:  'org.json', name: 'json', version: '20090211'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.codehaus.groovy:groovy'
+	testImplementation "org.spockframework:spock-core:1.0-groovy-2.4"
+	testImplementation 'cglib:cglib-nodep:2.2'
+	runtimeOnly 'com.h2database:h2'
+}
+
+test {
+	useJUnitPlatform()
+}

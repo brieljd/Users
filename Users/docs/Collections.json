@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "3f9d7a5a-e6db-4e3c-ab93-dd22c576072f",
+		"name": "Collections",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API RESTful de creación de usuarios",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=F94F7DC9F391A9BC077215EADF6CC1D9",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Gabriel Jiménez\",\n    \"email\": \"jimenezgabriel265@gmail.com\",\n    \"password\" : \"Briel123\",\n    \"phones\": [\n        {\n            \"number\": \"50451512\",\n            \"cityCode\" : \"9\",\n            \"countryCode\" : \"56\"\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8485/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8485",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
